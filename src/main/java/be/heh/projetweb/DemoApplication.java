@@ -20,6 +20,6 @@ public class DemoApplication {
 
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "le Monde") String name) {
-        return String.format("Bien le Bonjour %s!", name);
+        return String.format(" Bonjour %s!", name);
     }
 }
