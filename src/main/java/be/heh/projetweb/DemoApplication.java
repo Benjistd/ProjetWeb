@@ -18,8 +18,8 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @GetMapping("/boo")
-    public String hello(@RequestParam(value = "name", defaultValue = "le Monde") String name) {
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "name", defaultValue = "toi") String name) {
         return String.format(" Bonjour %s!", name);
     }
 }
